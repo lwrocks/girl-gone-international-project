@@ -12,6 +12,7 @@ const path = require("path");
 const session = require("express-session");
 const MongoStore = require("connect-mongo")(session);
 const flash = require("connect-flash");
+const communtiyJson = require("./bin/communities.json");
 
 mongoose
   .connect("mongodb://localhost/girl-gone-international", {
@@ -81,6 +82,9 @@ require("./passport")(app);
 
 const index = require("./routes/index");
 app.use("/", index);
+
+const communityRoutes = require("./routes/communities");
+app.use("/", communityRoutes);
 
 const authRoutes = require("./routes/auth");
 app.use("/auth", authRoutes);
