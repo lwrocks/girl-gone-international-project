@@ -2,7 +2,8 @@ const mongoose = require("mongoose");
 
 const communitySchema = new mongoose.Schema({
   communityName: String,
-  location: String,
+  city: String,
+  cityImage: String,
   continent: String,
   communityManager: Array,
   communitySize: Number,
