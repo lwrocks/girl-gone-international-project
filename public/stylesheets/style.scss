@@ -1,8 +1,21 @@
+/* Import Julius Sans One */
+@import url(https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap);
+
+/* Import Hind */
+@import url(https://fonts.googleapis.com/css?family=Hind&display=swap);
+
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Hind", sans-serif;
+  font-size: 14px;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+h1 {
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 44px;
+  color: #87C6CB; 
 }
