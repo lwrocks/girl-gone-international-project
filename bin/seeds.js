@@ -8,7 +8,12 @@ const communities = [
     communityName: "Berlin | Girl Gone International",
     location: "Berlin, Germany",
     communityManagers: [
-      "Violet Dove,  Alicia Stolsmark, Tanya de Boer, Jardena Lande, Indah Hoskins, Laurel Wright"
+      "Violet Dove",
+      "Alicia Stolsmark",
+      "Tanya de Boer",
+      "Jardena Lande",
+      "Indah Hoskins",
+      "Laurel Wright"
     ],
     communitySize: 19526,
     continent: "Europe",
