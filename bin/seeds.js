@@ -38,6 +38,7 @@ const communities = [
     location: "Stockholm, Sweden",
     communityManagers: ["Samantha Govender", "Pipsa Saarento"],
     communitySize: 4326,
+    cityImage: "https://i.imgur.com/fO9fc0b.jpg",
     continent: "Europe",
     url: "https://www.facebook.com/groups/GGIstockholm/",
     coordinates: [59.3293, 18.0686]
@@ -46,8 +47,9 @@ const communities = [
   {
     communityName: "London | Girl Gone International ",
     location: "London, United Kingdom",
-    communityManagers: ["Jennifer Athanasiadis, Zoë Sofair"],
+    communityManagers: ["Jennifer Athanasiadis", "Zoë Sofair"],
     communitySize: 7139,
+    cityImage: "https://i.imgur.com/AodpEC1.jpg",
     continent: "Europe",
     url: "https://www.facebook.com/groups/LondonGGI/",
     coordinates: [51.5074, -0.1278]
@@ -56,8 +58,9 @@ const communities = [
   {
     communityName: "Oslo | Girl Gone International",
     location: "Oslo, Norway",
-    communityManagers: ["Kata Bencze, Valerie Robertson, Suzanne van Gils"],
+    communityManagers: ["Kata Bencze", "Valerie Robertson", "Suzanne van Gils"],
     communitySize: 385,
+    cityImage: "https://i.imgur.com/RQgdJBz.jpg",
     continent: "Europe",
     url: "https://www.facebook.com/groups/GGIOSLO/",
     coordinates: [59.9139, 10.7522]
@@ -66,8 +69,9 @@ const communities = [
   {
     communityName: "Mallorca | Girl Gone International",
     location: "Mallorca, Spain",
-    communityManagers: ["Adèle Chrétien, Aleksandra Pilch"],
+    communityManagers: ["Adèle Chrétien", "Aleksandra Pilch"],
     communitySize: 4354,
+    cityImage: "https://i.imgur.com/uqC3sOQ.jpg",
     continent: "Europe",
     url: "https://www.facebook.com/groups/mallorcaggi/",
     coordinates: [39.6953, 3.0176]
@@ -76,8 +80,9 @@ const communities = [
   {
     communityName: "Chicago | Girl Gone International ",
     location: "Chicago, Illinois (USA)",
-    communityManagers: ["Lynn Sikora, Dijana Savić"],
+    communityManagers: ["Lynn Sikora", "Dijana Savić"],
     communitySize: 256,
+    cityImage: "https://i.imgur.com/2c2yy31.jpg",
     continent: "North America",
     url: "https://www.facebook.com/groups/ChicagoGGI/",
     coordinates: [41.8781, -87.6298]
@@ -86,8 +91,9 @@ const communities = [
   {
     communityName: "San Francisco | Girl Gone International",
     location: "San Francisco, California (USA)",
-    communityManagers: ["Bianca Encinas, Ariana Rizzato"],
+    communityManagers: ["Bianca Encinas", "Ariana Rizzato"],
     communitySize: 1092,
+    cityImage: "https://i.imgur.com/xVHD9OC.jpg",
     continent: "North America",
     url: "https://www.facebook.com/groups/ggisanfran/",
     coordinates: [37.7749, -122.4194]
@@ -98,6 +104,7 @@ const communities = [
     location: "Toronto, Ontario (Canada)",
     communityManagers: ["Victoria Procunier"],
     communitySize: 738,
+    cityImage: "https://i.imgur.com/63TMlvz.jpg",
     continent: "North America",
     url: "https://www.facebook.com/groups/GGIToronto/",
     coordinates: [43.6532, -79.3832]
@@ -108,6 +115,7 @@ const communities = [
     location: "Los Angeles, California (USA)",
     communityManagers: ["Lina Lie"],
     communitySize: 988,
+    cityImage: "https://i.imgur.com/CtS66Rn.jpg",
     continent: "North America",
     url: "https://www.facebook.com/groups/GGILA/",
     coordinates: [34.0522, -118.2437]
@@ -118,6 +126,7 @@ const communities = [
     location: "Mexico City, Mexico",
     communityManagers: ["Anne Scott"],
     communitySize: 529,
+    cityImage: "https://i.imgur.com/ZA5yvcz.jpg",
     continent: "North America",
     url: "https://www.facebook.com/groups/MexicoGGI/",
     coordinates: [23.6345, -102.5528]
@@ -126,8 +135,9 @@ const communities = [
   {
     communityName: "Washington, DC | Girl Gone International",
     location: "Washington, DC (USA)",
-    communityManagers: ["Alexa Grellet, Jennifer Howell"],
+    communityManagers: ["Alexa Grellet", "Jennifer Howell"],
     communitySize: 329,
+    cityImage: "https://i.imgur.com/d9NoN24.jpg",
     continent: "North America",
     url: "https://www.facebook.com/groups/GGIWashington/",
     coordinates: [47.7511, -120.7401]
@@ -136,8 +146,9 @@ const communities = [
   {
     communityName: "Hong Kong | Girl Gone International",
     location: "Hong Kong",
-    communityManagers: ["Tanya Sautina, Gemma Cauchi, Linda Fong"],
+    communityManagers: ["Tanya Sautina", "Gemma Cauchi", "Linda Fong"],
     communitySize: 3130,
+    cityImage: "https://i.imgur.com/v8AKoJQ.jpg",
     continent: "Asia",
     url: "https://www.facebook.com/groups/GGIHongKong/",
     coordinates: [22.3193, 114.1694]
@@ -146,8 +157,9 @@ const communities = [
   {
     communityName: "Canggu & Seminyak | Girl Gone International",
     location: "Bali, Indonesia ",
-    communityManagers: ["Nona Baradja, Stephanie King"],
+    communityManagers: ["Nona Baradja", "Stephanie King"],
     communitySize: 391,
+    cityImage: "https://i.imgur.com/zrCub2v.jpg",
     continent: "Asia",
     url: "https://www.facebook.com/groups/BaliGGI/",
     coordinates: [-8.3405, 115.092]
@@ -158,6 +170,7 @@ const communities = [
     location: "Kuala Lumpur, Malaysia",
     communityManagers: ["Au Leng Wai"],
     communitySize: 373,
+    cityImage: "https://i.imgur.com/c5hlmR2.jpg",
     continent: "Asia",
     url: "https://www.facebook.com/groups/KualaLumpurGGI/",
     coordinates: [3.139, 101.6869]
@@ -168,6 +181,7 @@ const communities = [
     location: "Mumbai, India ",
     communityManagers: ["Sai Waikar"],
     communitySize: 44,
+    cityImage: "",
     continent: "Asia",
     url: "https://www.facebook.com/groups/mumbaiggi/",
     coordinates: [19.076, 72.8777]
@@ -176,8 +190,9 @@ const communities = [
   {
     communityName: "Singapore | Girl Gone International",
     location: "Singapore",
-    communityManagers: ["Veronica May, Michelle Ibarra, Cora Sauer"],
+    communityManagers: ["Veronica May", "Michelle Ibarra", "Cora Sauer"],
     communitySize: 1508,
+    cityImage: "",
     continent: "Asia",
     url: "https://www.facebook.com/groups/GGISingapore/",
     coordinates: [1.3521, 103.8198]
@@ -188,6 +203,7 @@ const communities = [
     location: "Abu Dhabi, United Arab Emirates",
     communityManagers: ["Tina Jones"],
     communitySize: 1173,
+    cityImage: "",
     continent: "Asia",
     url: "https://www.facebook.com/groups/ggiabudhabi/",
     coordinates: [24.4539, 54.3773]
@@ -198,6 +214,7 @@ const communities = [
     location: "Sydney, NSW, Australia",
     communityManagers: ["Tanti Mazda"],
     communitySize: 1956,
+    cityImage: "",
     continent: "Australia",
     url: "https://www.facebook.com/groups/sydneyggi/",
     coordinates: [-33.8688, 151.2093]
@@ -208,6 +225,7 @@ const communities = [
     location: "Melbourne, Victoria, Australia",
     communityManagers: ["Madina Almat"],
     communitySize: 1727,
+    cityImage: "",
     continent: "Australia",
     url: "https://www.facebook.com/groups/melbourneggi/",
     coordinates: [37.8136, 144.9631]
@@ -218,6 +236,7 @@ const communities = [
     location: "Nairobi, Kenya",
     communityManagers: ["Janine Brophy"],
     communitySize: 221,
+    cityImage: "",
     continent: "Africa",
     url: "https://www.facebook.com/groups/GGINairobi",
     coordinates: [1.2921, 36.8219]
@@ -228,6 +247,7 @@ const communities = [
     location: "Johannesburg, South Africa",
     communityManagers: ["Deshni Govender"],
     communitySize: 189,
+    cityImage: "",
     continent: "Africa",
     url: "https://www.facebook.com/groups/GGIJohannesurg/",
     coordinates: [26.2041, 28.0473]
@@ -238,6 +258,7 @@ const communities = [
     location: "Addis Ababa, Ethiopia",
     communityManagers: ["Rani Wako"],
     communitySize: 207,
+    cityImage: "",
     continent: "Africa",
     url: "https://www.facebook.com/groups/797596360676982",
     coordinates: [8.9806, 38.7578]
@@ -248,6 +269,7 @@ const communities = [
     location: "Lagos, Nigeria",
     communityManagers: ["Sina Pape"],
     communitySize: 193,
+    cityImage: "",
     continent: "Africa",
     url: "https://www.facebook.com/groups/GGILagos/",
     coordinates: [6.5244, 3.3792]
@@ -258,6 +280,7 @@ const communities = [
     location: "Lima, Peru",
     communityManagers: ["Giannina Magdlener"],
     communitySize: 111,
+    cityImage: "",
     continent: "South America",
     url: "https://www.facebook.com/groups/LimaGGI/",
     coordinates: [12.0464, 77.0428]
@@ -266,8 +289,9 @@ const communities = [
   {
     communityName: "Bogotá | Girl Gone International",
     location: "Bogotá, Colombia",
-    communityManagers: ["Maritza Gabriela McCully"],
+    communityManagers: ["Maritza Gabriela McCully", "Natalie Assaad"],
     communitySize: 393,
+    cityImage: "",
     continent: "South America",
     url: "https://www.facebook.com/groups/BogotaGGI",
     coordinates: [4.711, 74.0721]
@@ -288,6 +312,7 @@ const communities = [
     location: "São Paulo, Brazil",
     communityManagers: ["Viviane Riegel"],
     communitySize: 284,
+    cityImage: "",
     continent: "South America",
     url: "https://www.facebook.com/groups/GGISP/",
     coordinates: [23.5505, 46.6333]
@@ -298,6 +323,7 @@ const communities = [
     location: "Tallinn, Estonia",
     communityManagers: ["Marii Val"],
     communitySize: 378,
+    cityImage: "",
     continent: "Europe",
     url: "https://www.facebook.com/groups/TallinnGGI",
     coordinates: [59.437, 24.7536]
@@ -308,6 +334,7 @@ const communities = [
     location: "Zagreb, Croatia",
     communityManagers: ["Ivana Custic"],
     communitySize: 165,
+    cityImage: "",
     continent: "Europe",
     url: "https://www.facebook.com/groups/ZagrebGGI",
     coordinates: [45.815, 15.9819]
