@@ -26,25 +26,34 @@ router.get("/signup", (req, res, next) => {
 });
 
 router.post("/signup", (req, res, next) => {
-  const { username, password, accessCode } = req.body;
+  const { username, firstname, lastname, password, accessCode } = req.body;
+  console.log("we submitted something");
+  console.log(req.body);
 
   if (!username) {
+    console.log("user doesnt exist");
     res.render("auth/signup.hbs", { errorMessage: "Username cannot be empty" });
     return;
   }
   if (password.length < 6) {
+    console.log("small password");
+
     res.render("auth/signup.hbs", {
       errorMessage: "Password must have a minimum of 6 characters."
     });
     return;
   }
   if (!accessCode) {
+    console.log("no accesCode");
+
     res.render("auth/signup.hbs", { errorMessage: "Access code is required" });
     return;
   }
+  console.log("before findind");
   User.findOne({ username: username })
     .then(user => {
       if (user) {
+        console.log("we found a user");
         res.render("auth/signup.hbs", {
           errorMessage: "Username already exists"
         });
@@ -53,7 +62,14 @@ router.post("/signup", (req, res, next) => {
       return bcrypt.hash(password, 10);
     })
     .then(hash => {
-      return User.create({ username: username, password: hash });
+      console.log("we are about to create");
+      return User.create({
+        username,
+        accessCode,
+        firstname,
+        lastname,
+        password: hash
+      });
     })
     .then(createdUser => {
       console.log(createdUser);

@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const communitySchema = new mongoose.Schema({
   communityName: String,
-  city: String,
+  location: String,
   cityImage: String,
   continent: String,
   coordinates: [String],
