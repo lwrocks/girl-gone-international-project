@@ -1,6 +1,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 
 <!-- This is an empty `<div>` to which we give an `id` to target it in the `js` later on, to make it our container for the map and that we can also set dimensions for -->
+<<<<<<< HEAD
 <div id="map" style="width: 800px; height: 600px;">
 
   <script>
@@ -46,5 +47,18 @@
       .catch(err => {
         console.log(err);
       });
+=======
+
+<div id="map" style="width: 800px; height: 600px;">
+  <script>
+    mapboxgl.accessToken =
+      "pk.eyJ1IjoibHdyb2NrcyIsImEiOiJjazZnOTYxb2owN2p2M21rNmFic3Z6enBqIn0.Q0wTUupueKvy1qIiWi1bdQ"; // the mapbox token is required to display the map
+    const map = new mapboxgl.Map({
+      container: "map", // this refers to the `id` attribute that we gave to our empty div in the HTML
+      style: "mapbox://styles/mapbox/streets-v11", // mapbox comes with a preset of styles that we can use and allows to customize and share map styles with other users
+
+    });
+
+>>>>>>> 3388531e9918443e5aca2c421d59d67a53d54373
   </script>
 </div>
