@@ -26,36 +26,44 @@ router.get("/signup", (req, res, next) => {
 });
 
 router.post("/signup", (req, res, next) => {
-  const username = req.body.username;
-  const password = req.body.password;
-  if (username === "" || password === "") {
-    res.render("auth/signup", { message: "Indicate username and password" });
+  const { username, password, accessCode } = req.body;
+
+  if (!username) {
+    res.render("auth/signup.hbs", { errorMessage: "Username cannot be empty" });
     return;
   }
-
-  User.findOne({ username }, "username", (err, user) => {
-    if (user !== null) {
-      res.render("auth/signup", { message: "The username already exists" });
-      return;
-    }
-
-    const salt = bcrypt.genSaltSync(bcryptSalt);
-    const hashPass = bcrypt.hashSync(password, salt);
-
-    const newUser = new User({
-      username,
-      password: hashPass
+  if (password.length < 6) {
+    res.render("auth/signup.hbs", {
+      errorMessage: "Password must have a minimum of 6 characters."
     });
+    return;
+  }
+  if (!accessCode) {
+    res.render("auth/signup.hbs", { errorMessage: "Access code is required" });
+    return;
+  }
+  User.findOne({ username: username })
+    .then(user => {
+      if (user) {
+        res.render("auth/signup.hbs", {
+          errorMessage: "Username already exists"
+        });
+        return;
+      }
+      return bcrypt.hash(password, 10);
+    })
+    .then(hash => {
+      return User.create({ username: username, password: hash });
+    })
+    .then(createdUser => {
+      console.log(createdUser);
 
-    newUser
-      .save()
-      .then(() => {
-        res.redirect("/");
-      })
-      .catch(err => {
-        res.render("auth/signup", { message: "Something went wrong" });
-      });
-  });
+      req.session.user = createdUser;
+      res.redirect("/");
+    })
+    .catch(err => {
+      next(err);
+    });
 });
 
 router.get("/logout", (req, res) => {
