@@ -1,24 +1,35 @@
-<h2>Signup</h2>
+<h2>Sign Up</h2>
+<p>Welcome to GGI! Please fill out the form below to create an account.</p>
+<div class="signup-container">
+  <form action="/auth/signup" method="POST" id="form-container">
+    <label for="firstname">First Name</label>
+    <input type="text" name="firstname" id="firstname">
+    <label for="lastname">Last Name</label>
+    <input type="text" name="lastname" id="lastname">
+    <label for="email">Email Address</label>
+    <input type="email" name="email" id="email">
+    <label for="accesscode">Access Code</label>
+    <input type="text" name="accesscode" id="access code">
 
-<form action="/auth/signup" method="POST" id="form-container">
-  <label for="username">Username</label>
-  <input id="username" type="text" name="username" placeholder="JonSnow">
+    <br><br>
 
-  <br><br>
+    <label for="username">Username</label>
+    <input id="username" type="text" name="username" placeholder="GGI">
+    <label for="password">Password</label>
+    <input id="password" type="password" name="password" placeholder="Password">
 
-  <label for="password">Password</label>
-  <input id="password" type="password" name="password" placeholder="Your password">
-  <br>
-  {{#if message }}
+    <br>
+    {{#if message }}
     <div class="error-message">{{ message }}</div>
-  {{/if}}
+    {{/if}}
 
-  <br><br>
+    <br><br>
 
-  <button>Create account</button>
+    <button>Create Account</button>
 
-  <p class="account-message">
-    Do you already have an account?
-    <a href="/auth/login">Login</a>
-  </p>
-</form>
+    <p class="account-message">
+      Do you already have an account?
+      <a href="/auth/login">Login</a>
+    </p>
+  </form>
+</div>

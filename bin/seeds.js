@@ -16,6 +16,7 @@ const communities = [
       "Laurel Wright"
     ],
     communitySize: 19526,
+    cityImage: "https://i.imgur.com/V7qglqT.jpg",
     continent: "Europe",
     url: "https://www.facebook.com/groups/GGIBerlin/",
     coordinates: [52.52, 13.405]
@@ -26,6 +27,7 @@ const communities = [
     location: "Hamburg, Germany",
     communityManagers: ["Maike Breternitz"],
     communitySize: 6368,
+    cityImage: "https://i.imgur.com/U3XTmbV.jpg",
     continent: "Europe",
     url: "https://www.facebook.com/groups/girlgoneinternationalhh/",
     coordinates: [53.5511, 9.9937]
@@ -34,7 +36,7 @@ const communities = [
   {
     communityName: "Stockholm | Girl Gone International",
     location: "Stockholm, Sweden",
-    communityManagers: ["Samantha Govender, Pipsa Saarento"],
+    communityManagers: ["Samantha Govender", "Pipsa Saarento"],
     communitySize: 4326,
     continent: "Europe",
     url: "https://www.facebook.com/groups/GGIstockholm/",
