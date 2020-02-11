@@ -52,7 +52,7 @@ const communities = [
     cityImage: "https://i.imgur.com/AodpEC1.jpg",
     continent: "Europe",
     url: "https://www.facebook.com/groups/LondonGGI/",
-    coordinates: [51.5074, 0.1278]
+    coordinates: [51.5074, -0.1278]
   },
 
   {
@@ -85,7 +85,7 @@ const communities = [
     cityImage: "https://i.imgur.com/2c2yy31.jpg",
     continent: "North America",
     url: "https://www.facebook.com/groups/ChicagoGGI/",
-    coordinates: [41.8781, 87.6298]
+    coordinates: [41.8781, -87.6298]
   },
 
   {
@@ -96,7 +96,7 @@ const communities = [
     cityImage: "https://i.imgur.com/xVHD9OC.jpg",
     continent: "North America",
     url: "https://www.facebook.com/groups/ggisanfran/",
-    coordinates: [37.7749, 122.4194]
+    coordinates: [37.7749, -122.4194]
   },
 
   {
@@ -107,7 +107,7 @@ const communities = [
     cityImage: "https://i.imgur.com/63TMlvz.jpg",
     continent: "North America",
     url: "https://www.facebook.com/groups/GGIToronto/",
-    coordinates: [43.6532, 79.3832]
+    coordinates: [43.6532, -79.3832]
   },
 
   {
@@ -118,7 +118,7 @@ const communities = [
     cityImage: "https://i.imgur.com/CtS66Rn.jpg",
     continent: "North America",
     url: "https://www.facebook.com/groups/GGILA/",
-    coordinates: [34.0522, 118.2437]
+    coordinates: [34.0522, -118.2437]
   },
 
   {
@@ -129,7 +129,7 @@ const communities = [
     cityImage: "https://i.imgur.com/ZA5yvcz.jpg",
     continent: "North America",
     url: "https://www.facebook.com/groups/MexicoGGI/",
-    coordinates: [23.6345, 102.5528]
+    coordinates: [23.6345, -102.5528]
   },
 
   {
@@ -140,7 +140,7 @@ const communities = [
     cityImage: "https://i.imgur.com/d9NoN24.jpg",
     continent: "North America",
     url: "https://www.facebook.com/groups/GGIWashington/",
-    coordinates: [47.7511, 120.7401]
+    coordinates: [47.7511, -120.7401]
   },
 
   {
@@ -162,7 +162,7 @@ const communities = [
     cityImage: "https://i.imgur.com/zrCub2v.jpg",
     continent: "Asia",
     url: "https://www.facebook.com/groups/BaliGGI/",
-    coordinates: [8.3405, 115.092]
+    coordinates: [-8.3405, 115.092]
   },
 
   {
@@ -217,7 +217,7 @@ const communities = [
     cityImage: "",
     continent: "Australia",
     url: "https://www.facebook.com/groups/sydneyggi/",
-    coordinates: [33.8688, 151.2093]
+    coordinates: [-33.8688, 151.2093]
   },
 
   {
