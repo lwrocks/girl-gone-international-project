@@ -5,7 +5,7 @@ const communitySchema = new mongoose.Schema({
   city: String,
   cityImage: String,
   continent: String,
-  coordinates: Number,
+  coordinates: Array,
   communityManager: Array,
   communitySize: Number,
   url: String
