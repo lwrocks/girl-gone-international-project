@@ -48,7 +48,7 @@ const communities = [
     communitySize: 7139,
     continent: "Europe",
     url: "https://www.facebook.com/groups/LondonGGI/",
-    coordinates: [51.5074, 0.1278]
+    coordinates: [51.5074, -0.1278]
   },
 
   {
@@ -78,7 +78,7 @@ const communities = [
     communitySize: 256,
     continent: "North America",
     url: "https://www.facebook.com/groups/ChicagoGGI/",
-    coordinates: [41.8781, 87.6298]
+    coordinates: [41.8781, -87.6298]
   },
 
   {
@@ -88,7 +88,7 @@ const communities = [
     communitySize: 1092,
     continent: "North America",
     url: "https://www.facebook.com/groups/ggisanfran/",
-    coordinates: [37.7749, 122.4194]
+    coordinates: [37.7749, -122.4194]
   },
 
   {
@@ -98,7 +98,7 @@ const communities = [
     communitySize: 738,
     continent: "North America",
     url: "https://www.facebook.com/groups/GGIToronto/",
-    coordinates: [43.6532, 79.3832]
+    coordinates: [43.6532, -79.3832]
   },
 
   {
@@ -108,7 +108,7 @@ const communities = [
     communitySize: 988,
     continent: "North America",
     url: "https://www.facebook.com/groups/GGILA/",
-    coordinates: [34.0522, 118.2437]
+    coordinates: [34.0522, -118.2437]
   },
 
   {
@@ -118,7 +118,7 @@ const communities = [
     communitySize: 529,
     continent: "North America",
     url: "https://www.facebook.com/groups/MexicoGGI/",
-    coordinates: [23.6345, 102.5528]
+    coordinates: [23.6345, -102.5528]
   },
 
   {
@@ -128,7 +128,7 @@ const communities = [
     communitySize: 329,
     continent: "North America",
     url: "https://www.facebook.com/groups/GGIWashington/",
-    coordinates: [47.7511, 120.7401]
+    coordinates: [47.7511, -120.7401]
   },
 
   {
@@ -148,7 +148,7 @@ const communities = [
     communitySize: 391,
     continent: "Asia",
     url: "https://www.facebook.com/groups/BaliGGI/",
-    coordinates: [8.3405, 115.092]
+    coordinates: [-8.3405, 115.092]
   },
 
   {
@@ -198,7 +198,7 @@ const communities = [
     communitySize: 1956,
     continent: "Australia",
     url: "https://www.facebook.com/groups/sydneyggi/",
-    coordinates: [33.8688, 151.2093]
+    coordinates: [-33.8688, 151.2093]
   },
 
   {

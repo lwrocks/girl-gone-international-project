@@ -12,4 +12,14 @@ router.get("/map", (req, res) => {
     });
 });
 
+router.get("/communities", (req, res) => {
+  Community.find()
+    .then(communities => {
+      res.json(communities);
+    })
+    .catch(err => {
+      next(err);
+    });
+});
+
 module.exports = router;
