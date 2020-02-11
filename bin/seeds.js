@@ -181,7 +181,7 @@ const communities = [
     location: "Mumbai, India ",
     communityManagers: ["Sai Waikar"],
     communitySize: 44,
-    cityImage: "",
+    cityImage: "https://i.imgur.com/6EwdveG.jpg",
     continent: "Asia",
     url: "https://www.facebook.com/groups/mumbaiggi/",
     coordinates: [19.076, 72.8777]
@@ -192,7 +192,7 @@ const communities = [
     location: "Singapore",
     communityManagers: ["Veronica May", "Michelle Ibarra", "Cora Sauer"],
     communitySize: 1508,
-    cityImage: "",
+    cityImage: "https://i.imgur.com/KdgemiK.jpg",
     continent: "Asia",
     url: "https://www.facebook.com/groups/GGISingapore/",
     coordinates: [1.3521, 103.8198]
@@ -203,7 +203,7 @@ const communities = [
     location: "Abu Dhabi, United Arab Emirates",
     communityManagers: ["Tina Jones"],
     communitySize: 1173,
-    cityImage: "",
+    cityImage: "https://i.imgur.com/jTKEWNr.jpg",
     continent: "Asia",
     url: "https://www.facebook.com/groups/ggiabudhabi/",
     coordinates: [24.4539, 54.3773]
@@ -214,7 +214,7 @@ const communities = [
     location: "Sydney, NSW, Australia",
     communityManagers: ["Tanti Mazda"],
     communitySize: 1956,
-    cityImage: "",
+    cityImage: "https://i.imgur.com/1IyFQUJ.jpg",
     continent: "Australia",
     url: "https://www.facebook.com/groups/sydneyggi/",
     coordinates: [-33.8688, 151.2093]
@@ -225,7 +225,7 @@ const communities = [
     location: "Melbourne, Victoria, Australia",
     communityManagers: ["Madina Almat"],
     communitySize: 1727,
-    cityImage: "",
+    cityImage: "https://i.imgur.com/2U36yiS.jpg",
     continent: "Australia",
     url: "https://www.facebook.com/groups/melbourneggi/",
     coordinates: [37.8136, 144.9631]
@@ -236,7 +236,7 @@ const communities = [
     location: "Nairobi, Kenya",
     communityManagers: ["Janine Brophy"],
     communitySize: 221,
-    cityImage: "",
+    cityImage: "https://i.imgur.com/Ayn7jwo.jpg",
     continent: "Africa",
     url: "https://www.facebook.com/groups/GGINairobi",
     coordinates: [1.2921, 36.8219]
@@ -247,7 +247,7 @@ const communities = [
     location: "Johannesburg, South Africa",
     communityManagers: ["Deshni Govender"],
     communitySize: 189,
-    cityImage: "",
+    cityImage: "https://i.imgur.com/FWi2lO6.jpg",
     continent: "Africa",
     url: "https://www.facebook.com/groups/GGIJohannesurg/",
     coordinates: [26.2041, 28.0473]
@@ -258,7 +258,7 @@ const communities = [
     location: "Addis Ababa, Ethiopia",
     communityManagers: ["Rani Wako"],
     communitySize: 207,
-    cityImage: "",
+    cityImage: "https://i.imgur.com/oG1f1ZK.jpg",
     continent: "Africa",
     url: "https://www.facebook.com/groups/797596360676982",
     coordinates: [8.9806, 38.7578]
@@ -269,7 +269,7 @@ const communities = [
     location: "Lagos, Nigeria",
     communityManagers: ["Sina Pape"],
     communitySize: 193,
-    cityImage: "",
+    cityImage: "https://i.imgur.com/UIlzzuD.jpg",
     continent: "Africa",
     url: "https://www.facebook.com/groups/GGILagos/",
     coordinates: [6.5244, 3.3792]
@@ -280,7 +280,7 @@ const communities = [
     location: "Lima, Peru",
     communityManagers: ["Giannina Magdlener"],
     communitySize: 111,
-    cityImage: "",
+    cityImage: "https://i.imgur.com/yU0c7YF.jpg",
     continent: "South America",
     url: "https://www.facebook.com/groups/LimaGGI/",
     coordinates: [12.0464, 77.0428]
