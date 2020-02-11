@@ -228,7 +228,7 @@ const communities = [
     cityImage: "",
     continent: "Australia",
     url: "https://www.facebook.com/groups/melbourneggi/",
-    coordinates: [37.8136, 144.9631]
+    coordinates: [-37.8136, 144.9631]
   },
 
   {
@@ -294,7 +294,7 @@ const communities = [
     cityImage: "",
     continent: "South America",
     url: "https://www.facebook.com/groups/BogotaGGI",
-    coordinates: [4.711, 74.0721]
+    coordinates: [5.7208, -74.2396]
   },
 
   {
@@ -304,7 +304,7 @@ const communities = [
     communitySize: 51,
     continent: "South America",
     url: "https://www.facebook.com/groups/PereiraCoGGI",
-    coordinates: [4.8087, 75.6906]
+    coordinates: [4.8048, -76.8343]
   },
 
   {

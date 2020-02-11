@@ -2,7 +2,7 @@
 
 <!-- This is an empty `<div>` to which we give an `id` to target it in the `js` later on, to make it our container for the map and that we can also set dimensions for -->
 
-<div id="map" style="width: 800px; height: 600px;">
+<div id="map" style="width: 1200px; height: 450px;">
 
   <script>
     mapboxgl.accessToken =
@@ -10,9 +10,8 @@
     const map = new mapboxgl.Map({
       container: "map", // this refers to the `id` attribute that we gave to our empty div in the HTML
       style: "mapbox://styles/mapbox/streets-v11", // mapbox comes with a preset of styles that we can use and allows to customize and share map styles with other users
-
+      maxBounds: [[-141.4237, -65.1617], [179.3369, 82.8674]]
     });
-
 
     axios
       .get(`http://localhost:3000/communities`)
@@ -28,9 +27,10 @@
           marker.setLngLat(community.coordinates.reverse()); // and we'll use that array as the coordinates for our marker
 
           marker.addTo(map);
+          console.log(communities)
           const popup = new mapboxgl.Popup();
-          popup.setLngLat(community.coordinates);
-          popup.setHTML("<div><h1>" + community.communityName + "</h1></div>");
+          popup.setLngLat(community.coordinates); // in order to have longitude before latitude the data is reversed because it appears as latitude before longitude but if it is reversed here it will be reversed a second time negating the effect thus for the second time it is left as is
+          popup.setHTML("<div><h3>" + community.location + "</h3><p>Community Size: " + community.communitySize + "</p><a href=''>Cummunity Page</a></div>");
           marker.setPopup(popup);
         })
 
