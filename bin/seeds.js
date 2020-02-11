@@ -267,7 +267,8 @@ const communities = [
     communityManagers: ["Maritza Gabriela McCully"],
     communitySize: 393,
     continent: "South America",
-    url: "https://www.facebook.com/groups/BogotaGGI"
+    url: "https://www.facebook.com/groups/BogotaGGI",
+    coordinates: [4.711, 74.0721]
   },
 
   {
@@ -276,7 +277,8 @@ const communities = [
     communityManagers: ["Mary Carper"],
     communitySize: 51,
     continent: "South America",
-    url: "https://www.facebook.com/groups/PereiraCoGGI"
+    url: "https://www.facebook.com/groups/PereiraCoGGI",
+    coordinates: [4.8087, 75.6906]
   },
 
   {
@@ -285,7 +287,8 @@ const communities = [
     communityManagers: ["Viviane Riegel"],
     communitySize: 284,
     continent: "South America",
-    url: "https://www.facebook.com/groups/GGISP/"
+    url: "https://www.facebook.com/groups/GGISP/",
+    coordinates: [23.5505, 46.6333]
   },
 
   {
@@ -294,7 +297,8 @@ const communities = [
     communityManagers: ["Marii Val"],
     communitySize: 378,
     continent: "Europe",
-    url: "https://www.facebook.com/groups/TallinnGGI"
+    url: "https://www.facebook.com/groups/TallinnGGI",
+    coordinates: [59.437, 24.7536]
   },
 
   {
@@ -303,7 +307,8 @@ const communities = [
     communityManagers: ["Ivana Custic"],
     communitySize: 165,
     continent: "Europe",
-    url: "https://www.facebook.com/groups/ZagrebGGI"
+    url: "https://www.facebook.com/groups/ZagrebGGI",
+    coordinates: [45.815, 15.9819]
   }
 ];
 
@@ -328,7 +333,7 @@ mongoose
   });
 
 //User.collection.drop();
-//Community.collection.drop();
+Community.collection.drop();
 
 Community.create(communities)
   .then(result => {
