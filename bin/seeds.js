@@ -291,7 +291,7 @@ const communities = [
     location: "Bogotá, Colombia",
     communityManagers: ["Maritza Gabriela McCully", "Natalie Assaad"],
     communitySize: 393,
-    cityImage: "",
+    cityImage: "https://i.imgur.com/kFzGYC5.jpg",
     continent: "South America",
     url: "https://www.facebook.com/groups/BogotaGGI",
     coordinates: [4.711, 74.0721]
@@ -302,6 +302,7 @@ const communities = [
     location: "Pereira, Colombia",
     communityManagers: ["Mary Carper"],
     communitySize: 51,
+    cityImage: "https://i.imgur.com/3R0pwGr.jpg",
     continent: "South America",
     url: "https://www.facebook.com/groups/PereiraCoGGI",
     coordinates: [4.8087, 75.6906]
@@ -312,7 +313,7 @@ const communities = [
     location: "São Paulo, Brazil",
     communityManagers: ["Viviane Riegel"],
     communitySize: 284,
-    cityImage: "",
+    cityImage: "https://i.imgur.com/xH2qspo.png",
     continent: "South America",
     url: "https://www.facebook.com/groups/GGISP/",
     coordinates: [23.5505, 46.6333]
@@ -323,7 +324,7 @@ const communities = [
     location: "Tallinn, Estonia",
     communityManagers: ["Marii Val"],
     communitySize: 378,
-    cityImage: "",
+    cityImage: "https://i.imgur.com/8rZry5I.jpg",
     continent: "Europe",
     url: "https://www.facebook.com/groups/TallinnGGI",
     coordinates: [59.437, 24.7536]
@@ -334,7 +335,7 @@ const communities = [
     location: "Zagreb, Croatia",
     communityManagers: ["Ivana Custic"],
     communitySize: 165,
-    cityImage: "",
+    cityImage: "https://i.imgur.com/fufuhVM.jpg",
     continent: "Europe",
     url: "https://www.facebook.com/groups/ZagrebGGI",
     coordinates: [45.815, 15.9819]
