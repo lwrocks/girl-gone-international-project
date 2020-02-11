@@ -27,16 +27,16 @@ router.get("/signup", (req, res, next) => {
 
 router.post("/signup", (req, res, next) => {
   const { username, firstname, lastname, password, accessCode } = req.body;
-  console.log("we submitted something");
-  console.log(req.body);
+  // console.log("we submitted something");
+  // console.log(req.body);
 
   if (!username) {
-    console.log("user doesnt exist");
+    // console.log("user doesnt exist");
     res.render("auth/signup.hbs", { errorMessage: "Username cannot be empty" });
     return;
   }
   if (password.length < 6) {
-    console.log("small password");
+    // console.log("small password");
 
     res.render("auth/signup.hbs", {
       errorMessage: "Password must have a minimum of 6 characters."
