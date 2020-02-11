@@ -317,7 +317,7 @@ mongoose
   });
 
 //User.collection.drop();
-//Community.collection.drop();
+Community.collection.drop();
 
 Community.create(communities)
   .then(result => {
