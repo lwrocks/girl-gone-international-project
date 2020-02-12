@@ -1,6 +1,15 @@
 const express = require("express");
 const router = express.Router();
 const Community = require("../models/Community");
+const NodeGeocoder = require("node-geocoder");
+
+// Setup Geocoder
+let options = {
+  provider: "mapquest",
+  apiKey: "HhZnDkz7vsaZVUHJlpyhHMhEhgfAsg0P"
+};
+
+let geocoder = NodeGeocoder(options);
 
 // This one renders the map
 router.get("/map", (req, res) => {
@@ -72,17 +81,22 @@ router.post("/community", loginCheck, (req, res, next) => {
     communitySize,
     url
   } = req.body;
-  console.log("commi", communityManagers);
-  let communityManagersArray = communityManagers.split(",");
-  console.log(communityManagersArray);
-  Community.create({
-    communityName,
-    location,
-    continent,
-    communityManagers: communityManagersArray,
-    communitySize,
-    url
-  })
+  geocoder
+    .geocode(location)
+    .then(results => {
+      console.log("commi", communityManagers);
+      let communityManagersArray = communityManagers.split(",");
+      console.log(communityManagersArray);
+      return Community.create({
+        communityName,
+        location,
+        continent,
+        communityManagers: communityManagersArray,
+        communitySize,
+        url,
+        coordinates: [results[0].latitude, results[0].longitude]
+      });
+    })
     .then(() => {
       res.redirect("/community");
     })
@@ -134,7 +148,5 @@ router.post("/community/:id/update", loginCheck, (req, res, next) => {
       next(err);
     });
 });
-
-// Show or hide login, signup, logout
 
 module.exports = router;
