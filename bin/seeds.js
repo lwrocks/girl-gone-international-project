@@ -283,7 +283,7 @@ const communities = [
     cityImage: "https://i.imgur.com/yU0c7YF.jpg",
     continent: "South America",
     url: "https://www.facebook.com/groups/LimaGGI/",
-    coordinates: [12.0464, 77.0428]
+    coordinates: [-12.0464, -77.0428]
   },
 
   {
@@ -316,7 +316,7 @@ const communities = [
     cityImage: "https://i.imgur.com/xH2qspo.png",
     continent: "South America",
     url: "https://www.facebook.com/groups/GGISP/",
-    coordinates: [23.5505, 46.6333]
+    coordinates: [-23.6815, -55.5601]
   },
 
   {
