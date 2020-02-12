@@ -140,7 +140,7 @@ const communities = [
     cityImage: "https://i.imgur.com/d9NoN24.jpg",
     continent: "North America",
     url: "https://www.facebook.com/groups/GGIWashington/",
-    coordinates: [47.7511, -120.7401]
+    coordinates: [38.8938, -79.2558]
   },
 
   {
