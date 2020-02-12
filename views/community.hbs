@@ -1,1 +1,7 @@
-<h1>{{community.communityName}}</h1>
+<h1>Our Communities</h1>
+<a href="/admin/add">Add A New Community</a>
+{{#each communityList}}
+<a href="/community/{{_id}}">
+  <p>{{communityName}}</p>
+</a>
+{{/each}}

@@ -18,7 +18,7 @@ router.get("/admin/panel", (req, res, next) => {
 router.post(
   "/login",
   passport.authenticate("local", {
-    successRedirect: "admin/panel",
+    successRedirect: "/auth/admin/panel",
     failureRedirect: "/auth/login",
     failureFlash: true,
     passReqToCallback: true
