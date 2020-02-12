@@ -22,4 +22,15 @@ router.get("/communities", (req, res) => {
     });
 });
 
+const loginCheck = (req, res, next) => {
+  if (req.user) {
+    next();
+  } else {
+    res.redirect("/");
+  }
+}
+
+router.get("/admin/add", loginCheck, (req, res) => {
+  res.render("admin/add.hbs");
+})
 module.exports = router;
