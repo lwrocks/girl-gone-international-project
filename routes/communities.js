@@ -28,7 +28,10 @@ router.get("/communities", (req, res) => {
 router.get("/community", (req, res, next) => {
   Community.find({})
     .then(communityDocuments => {
-      res.render("community.hbs", { communityList: communityDocuments });
+      res.render("community.hbs", {
+        communityList: communityDocuments,
+        user: req.user
+      });
     })
     .catch(err => {
       next(err);
@@ -68,7 +71,7 @@ router.post("/community", loginCheck, (req, res, next) => {
     communitySize,
     url
   } = req.body;
-  console.log('commi', communityManagers)
+  console.log("commi", communityManagers);
   let communityManagersArray = communityManagers.split(",");
   console.log(communityManagersArray);
   Community.create({
@@ -86,7 +89,49 @@ router.post("/community", loginCheck, (req, res, next) => {
     });
 });
 
-// Updating a community
+// Deleting a community
+router.get("/community/:id/delete", loginCheck, (req, res, next) => {
+  if (!req.user) {
+    res.redirect("/");
+    return;
+  }
+  Community.deleteOne({ _id: req.params.id })
+    .then(() => {
+      res.redirect("/community");
+    })
+    .catch(err => {
+      next(err);
+    });
+});
 
+// Updating a community
+router.get("/community/:id/update", loginCheck, (req, res, next) => {
+  Community.findById(req.params.id).then(community => {
+    console.log(community);
+    res.render("admin/update.hbs", { community });
+  });
+});
+
+router.post("/community/:id/update", loginCheck, (req, res, next) => {
+  Community.findByIdAndUpdate(
+    { _id: req.params.id },
+    {
+      communityName: req.body.communityName,
+      communityManagers: req.body.communityManagers,
+      communitySize: req.body.communitySize,
+      url: req.body.url
+    },
+    { new: true }
+  )
+    .then(community => {
+      console.log(community);
+      res.redirect(`/community/${req.params.id}`);
+    })
+    .catch(err => {
+      next(err);
+    });
+});
+
+// Show or hide login, signup, logout
 
 module.exports = router;

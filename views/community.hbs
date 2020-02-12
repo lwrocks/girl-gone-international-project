@@ -1,5 +1,7 @@
 <h1>Our Communities</h1>
+{{#if user}}
 <a href="/admin/add">Add A New Community</a>
+{{/if}}
 {{#each communityList}}
 <a href="/community/{{_id}}">
   <p>{{communityName}}</p>
