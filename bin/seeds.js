@@ -350,9 +350,13 @@ const Community = require("../models/Community");
 const bcryptSalt = 10;
 
 mongoose
-  .connect("mongodb://localhost:27017/girl-gone-international", {
-    useNewUrlParser: true
-  })
+  .connect(
+    process.env.MONGODB_URI ||
+      "mongodb://localhost:27017/girl-gone-international",
+    {
+      useNewUrlParser: true
+    }
+  )
   .then(x => {
     console.log(
       `Connected to Mongo! Database name: "${x.connections[0].name}"`

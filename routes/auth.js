@@ -11,10 +11,14 @@ router.get("/login", (req, res, next) => {
   res.render("auth/login", { message: req.flash("error") });
 });
 
+router.get("/admin/panel", (req, res, next) => {
+  res.render("admin/panel", { user: req.user });
+});
+
 router.post(
   "/login",
   passport.authenticate("local", {
-    successRedirect: "/",
+    successRedirect: "admin/panel",
     failureRedirect: "/auth/login",
     failureFlash: true,
     passReqToCallback: true

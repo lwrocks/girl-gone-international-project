@@ -14,7 +14,7 @@ const MongoStore = require("connect-mongo")(session);
 const flash = require("connect-flash");
 
 mongoose
-  .connect("mongodb://localhost/girl-gone-international", {
+  .connect(process.env.MONGODB_URI || "mongodb://localhost/girl-gone-international", {
     useNewUrlParser: true
   })
   .then(x => {
@@ -87,5 +87,8 @@ app.use("/", communityRoutes);
 
 const authRoutes = require("./routes/auth");
 app.use("/auth", authRoutes);
+
+// const adminRoutes = require("./routes/admin");
+// app.use("/admin", adminRoutes);
 
 module.exports = app;
