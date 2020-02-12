@@ -30,7 +30,7 @@
           console.log(communities)
           const popup = new mapboxgl.Popup();
           popup.setLngLat(community.coordinates); // in order to have longitude before latitude the data is reversed because it appears as latitude before longitude but if it is reversed here it will be reversed a second time negating the effect thus for the second time it is left as is
-          popup.setHTML("<div><h3>" + community.location + "</h3><p>Community Size: " + community.communitySize + "</p><a href=''>Cummunity Page</a></div>");
+          popup.setHTML("<div><h3>" + community.location + "</h3><p>Community Size: " + community.communitySize + "</p><a href=''>Community Page</a></div>");
           marker.setPopup(popup);
         })
 
