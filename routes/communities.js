@@ -67,6 +67,7 @@ router.post("/community", loginCheck, (req, res, next) => {
   const {
     communityName,
     location,
+    continent,
     communityManagers,
     communitySize,
     url
@@ -77,6 +78,7 @@ router.post("/community", loginCheck, (req, res, next) => {
   Community.create({
     communityName,
     location,
+    continent,
     communityManagers: communityManagersArray,
     communitySize,
     url
@@ -118,6 +120,7 @@ router.post("/community/:id/update", loginCheck, (req, res, next) => {
     {
       communityName: req.body.communityName,
       communityManagers: req.body.communityManagers,
+      location: req.body.location,
       communitySize: req.body.communitySize,
       url: req.body.url
     },
