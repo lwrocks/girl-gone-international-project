@@ -145,11 +145,12 @@ h1 {
   align-content: space-between;
 }
 
-#map {
-  align-items: center;
-}
-
 .newsletter-signup {
   background-color: #edd0b8;
   justify-content: center;
+}
+
+#map {
+  width: 100vw;
+  height: 100vh;
 }
