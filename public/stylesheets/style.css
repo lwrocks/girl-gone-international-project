@@ -41,6 +41,10 @@ body {
   font-size: 20px;
   padding: 20px; }
 
+.hero-text a:hover {
+  background-color: #697c9d;
+  color: #fff; }
+
 .main-navigation {
   text-align: right;
   padding-bottom: 5px; }
@@ -98,6 +102,9 @@ a {
   color: #697c9d;
   text-decoration: none; }
 
+a:hover {
+  color: #cd5a95; }
+
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 36px;
@@ -149,7 +156,30 @@ h2 {
   text-align: center; }
 
 #map {
-  width: 100vw;
+  width: 90vw;
   height: 400px; }
+
+.map-container {
+  padding-right: 65px;
+  padding-left: 65px; }
+  .map-container .map-container-text {
+    text-align: center;
+    padding-bottom: 10px; }
+  .map-container .map-container-community {
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 10px; }
+    .map-container .map-container-community .discover-community {
+      background-color: #cd5a95;
+      border-radius: 5px;
+      font-size: 20px;
+      color: #fff;
+      padding: 20px; }
+    .map-container .map-container-community .discover-community:hover {
+      background-color: #697c9d;
+      color: #fff; }
+    .map-container .map-container-community .global-group {
+      padding-top: 25px;
+      padding-bottom: 15px; }
 
 /*# sourceMappingURL=style.css.map */

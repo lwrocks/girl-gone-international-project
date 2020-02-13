@@ -1,12 +1,19 @@
-<h2>{{communityName}}</h2>
-<h3>Community Manager(s): {{communityManagers}}</h3>
-<p>Location: {{location}}</p>
-<p>Community Size: {{communitySize}}</p>
-<a href="{{url}}">
-  <p>{{communityName}} on Facebook</p>
-</a>
-<a href="/community">View All Communities</a>
-{{#if user}}
-<a href="/community/{{_id}}/delete">Delete This Community</a>
-<a href="/community/{{_id}}/update">Update This Community</a>
-{{/if}}
+<div class="community-detail-container">
+  <div class="community-details">
+    <h2>{{communityName}}</h2>
+    <h3>Community Manager(s): {{communityManagers}}</h3>
+    <p>Location: {{location}}</p>
+    <p>Community Size: {{communitySize}}</p>
+    <a href="{{url}}">
+      <p>{{communityName}} on Facebook</p>
+    </a>
+  </div>
+  <div class="end-user-controls">
+    <a href="/community">View All Communities</a>
+    <a href="/map">Back to Map</a>
+  </div>
+  {{#if user}}
+  <a href="/community/{{_id}}/delete">Delete This Community</a>
+  <a href="/community/{{_id}}/update">Update This Community</a>
+  {{/if}}
+</div>

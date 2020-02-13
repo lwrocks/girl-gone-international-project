@@ -1,60 +1,74 @@
-<a href="/community">View Our Communities</a>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<div class="map-container">
+  <div class="map-container-text">
+    <h1>Find Your GGI</h1>
+    <p>No matter where you are in the world, there's a GGI community near you!</p>
+  </div>
 
-<!-- This is an empty `<div>` to which we give an `id` to target it in the `js` later on, to make it our container for the map and that we can also set dimensions for -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 
-<div id="map">
-  <script>
-    mapboxgl.accessToken =
-      "pk.eyJ1IjoiYWt1cDIxIiwiYSI6ImNrNmR1NGZwcTA5bWMzbnFvc241aDFqMmoifQ.fyCAO_iP172DhP5xEXiTYg"; // the mapbox token is required to display the map
-    const map = new mapboxgl.Map({
-      container: "map", // this refers to the `id` attribute that we gave to our empty div in the HTML
-      style: "mapbox://styles/akup21/ck6kpjveb096s1ip79lc8pfbh", // mapbox comes with a preset of styles that we can use and allows to customize and share map styles with other users
-      center: [13.9695, 19.2696],
-      //maxBounds: [[-141.4237, -65.1617], [179.3369, 82.8674]],
-      zoom: 1
-    });
+  <!-- This is an empty `<div>` to which we give an `id` to target it in the `js` later on, to make it our container for the map and that we can also set dimensions for -->
 
-    axios
-      .get(`/communities`)
-      .then(response => {
-        console.log(response);
-
-        let communities = response.data; // the array of coordinates that we are sending from our backend route
-
-        communities.forEach((community) => {
-          console.log(community.coordinates)
-          const marker = new mapboxgl.Marker();
-
-          marker.setLngLat(community.coordinates.reverse()); // and we'll use that array as the coordinates for our marker
-
-          marker.addTo(map);
-          console.log(communities)
-          const popup = new mapboxgl.Popup();
-          popup.setLngLat(community.coordinates); // in order to have longitude before latitude the data is reversed because it appears as latitude before longitude but if it is reversed here it will be reversed a second time negating the effect thus for the second time it is left as is
-          popup.setHTML("<div><h3>" + community.location + "</h3><p>Community Size: " + community.communitySize + `</p><a href="/community/${community._id}">Community Page</a></div>`);
-          marker.setPopup(popup);
-        })
-
-        return
-        marker.on("dragend", data => {
-          const coord = data.target.coordinates;             //getLngLat().toArray();
-
-          axios
-            .patch(`http://localhost:3000/communities`, { coordinates: coord })
-            .then(() => {
-              console.log("communities shown!");
-            })
-            .catch(err => {
-              console.log(err);
-            });
-        });
-      })
-      .catch(err => {
-        console.log(err);
+  <div id="map">
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1IjoiYWt1cDIxIiwiYSI6ImNrNmR1NGZwcTA5bWMzbnFvc241aDFqMmoifQ.fyCAO_iP172DhP5xEXiTYg"; // the mapbox token is required to display the map
+      const map = new mapboxgl.Map({
+        container: "map", // this refers to the `id` attribute that we gave to our empty div in the HTML
+        style: "mapbox://styles/akup21/ck6kpjveb096s1ip79lc8pfbh", // mapbox comes with a preset of styles that we can use and allows to customize and share map styles with other users
+        center: [13.9695, 19.2696],
+        //maxBounds: [[-141.4237, -65.1617], [179.3369, 82.8674]],
+        zoom: 1
       });
 
+      axios
+        .get(`/communities`)
+        .then(response => {
+          console.log(response);
+
+          let communities = response.data; // the array of coordinates that we are sending from our backend route
+
+          communities.forEach((community) => {
+            console.log(community.coordinates)
+            const marker = new mapboxgl.Marker();
+
+            marker.setLngLat(community.coordinates.reverse()); // and we'll use that array as the coordinates for our marker
+
+            marker.addTo(map);
+            console.log(communities)
+            const popup = new mapboxgl.Popup();
+            popup.setLngLat(community.coordinates); // in order to have longitude before latitude the data is reversed because it appears as latitude before longitude but if it is reversed here it will be reversed a second time negating the effect thus for the second time it is left as is
+            popup.setHTML("<div><h3>" + community.location + "</h3><p>Community Size: " + community.communitySize + `</p><a href="/community/${community._id}">Community Page</a></div>`);
+            marker.setPopup(popup);
+          })
+
+          return
+          marker.on("dragend", data => {
+            const coord = data.target.coordinates;             //getLngLat().toArray();
+
+            axios
+              .patch(`http://localhost:3000/communities`, { coordinates: coord })
+              .then(() => {
+                console.log("communities shown!");
+              })
+              .catch(err => {
+                console.log(err);
+              });
+          });
+        })
+        .catch(err => {
+          console.log(err);
+        });
 
 
-  </script>
+
+    </script>
+  </div>
+  <div class="map-container-community">
+    <a href="/community" class="discover-community">Discover Our Communities</a>
+    <p class="global-group">GGI not in your city yet? <a href="#">Contact us</a> to learn how you can start a community.
+      In the meantime, you
+      can visit our <a href="https://www.facebook.com/groups/girlgoneinternational/">Global
+        Group</a> on Facebook.</p>
+
+  </div>
 </div>

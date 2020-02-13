@@ -2,8 +2,10 @@
 {{#if user}}
 <a href="/admin/add">Add A New Community</a>
 {{/if}}
-{{#each communityList}}
-<a href="/community/{{_id}}">
-  <p>{{communityName}}</p>
-</a>
-{{/each}}
+<div class="community-list">
+  {{#each communityList}}
+  <a href="/community/{{_id}}">
+    <p>{{communityName}}</p>
+  </a>
+  {{/each}}
+</div>
