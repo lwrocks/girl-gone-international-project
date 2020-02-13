@@ -6,10 +6,10 @@
 <div id="map" style="width: 1200px; height: 450px;">
   <script>
     mapboxgl.accessToken =
-      "pk.eyJ1IjoibHdyb2NrcyIsImEiOiJjazZnOTYxb2owN2p2M21rNmFic3Z6enBqIn0.Q0wTUupueKvy1qIiWi1bdQ"; // the mapbox token is required to display the map
+      "pk.eyJ1IjoiYWt1cDIxIiwiYSI6ImNrNmR1NGZwcTA5bWMzbnFvc241aDFqMmoifQ.fyCAO_iP172DhP5xEXiTYg"; // the mapbox token is required to display the map
     const map = new mapboxgl.Map({
       container: "map", // this refers to the `id` attribute that we gave to our empty div in the HTML
-      style: "mapbox://styles/mapbox/streets-v11", // mapbox comes with a preset of styles that we can use and allows to customize and share map styles with other users
+      style: "mapbox://styles/akup21/ck6kpjveb096s1ip79lc8pfbh", // mapbox comes with a preset of styles that we can use and allows to customize and share map styles with other users
       center: [13.9695, 19.2696],
       //maxBounds: [[-141.4237, -65.1617], [179.3369, 82.8674]],
       zoom: 1
@@ -32,7 +32,7 @@
           console.log(communities)
           const popup = new mapboxgl.Popup();
           popup.setLngLat(community.coordinates); // in order to have longitude before latitude the data is reversed because it appears as latitude before longitude but if it is reversed here it will be reversed a second time negating the effect thus for the second time it is left as is
-          popup.setHTML("<div><h3>" + community.location + "</h3><p>Community Size: " + community.communitySize + `</p><a href="/community/${community._id}">Community Page</a></div>`);
+          popup.setHTML("<div><h3>" + community.location + "</h3><p>Community Size: " + community.communitySize + `</p><a href="/community/${community._id}}">Community Page</a></div>`);
           marker.setPopup(popup);
         })
 
