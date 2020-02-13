@@ -18,45 +18,58 @@
 <body>
   <header>
     <div class="user-authentication">
-      <nav>
-        {{#if user}}
-        <a href="/auth/logout">Logout</a>
+      {{#if user}}
+      <li> <a href="/auth/logout">Logout</a>
         {{else}}
-        <a href="/auth/login">Login</a>
-        <a href="/auth/signup">Sign Up</a>
-        {{/if}}
-      </nav>
+      <li><a href="/auth/login">Login</a></li>
+      <li><a href="/auth/signup">Sign Up</a></li>
+      {{/if}}
     </div>
-    <div class="main-navigation">
-      <nav>
-        <a href="#">About</a>
-        <a href="/map">Find Your GGI</a>
-        <a href="#">Experiences</a>
-        <a href="#">Contact</a>
-      </nav>
-    </div>
+    <nav class="main-navigation">
+      <a href="/"><img class="nav-img" src="/images/GGI Logo 2020.png" alt="Girl Gone International Logo"></a>
+      <ul class="nav-ul">
+        <li><a href="#">About</a></li>
+        <li><a href="/map">Find Your GGI</a></li>
+        <li><a href="#">Experiences</a></li>
+        <li><a href="#">Book Club</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    {{!-- <div class="main-navigation"> --}}
+
+    {{!-- </div> --}}
   </header>
 
 
   {{{body}}}
 
+  <div class="newsletter-signup">
+    <p>Want to stay updated on new developments with Girl Gone International? Sign up for our newsletter!</p>
+    <input type="email" name="useremail" id="useremail"><button type="submit">Sign Up!</button>
+  </div>
+
   <footer class="footer">
-    <div class="social-icons">
-      <span class="Facebook"><a href="https://www.facebook.com/GirlGoneInternational/"><img
-            src="/images/Facebook_White.png" alt="Facebook"></a></span>
-      <span class="Instagram"><a href="https://www.instagram.com/girlgoneinternational/"><img
-            src="/images/Instagram_White.png" alt="Instagram"></a></span>
-      <span class="Twitter"><a href="https://twitter.com/GirlGoneIntl"><img src="/images/Twitter_White.png"
-            alt="Twitter"></a></span>
-      <span class="Pinterest"><a href="https://www.pinterest.com/GirlGoneIntl/"><img src="/images/Pinterest_White.png"
-            alt="Pinterest"></a></span>
-      <span class="Spotify"><a href="https://open.spotify.com/playlist/1zKWwKbxJBqCHbj7zJHskX"></a></span>
+    <div class="footer-flex">
+      <div class="social-icons">
+        <span class="Facebook"><a href="https://www.facebook.com/GirlGoneInternational/"><img
+              src="/images/Facebook Icon_Deep Ruby.png" alt="Facebook"></a></span>
+        <span class="Instagram"><a href="https://www.instagram.com/girlgoneinternational/"><img
+              src="/images/Instagram Icon_Deep Ruby.png" alt="Instagram"></a></span>
+        <span class="Twitter"><a href="https://twitter.com/GirlGoneIntl"><img src="/images/Twitter Icon_Deep Ruby.png"
+              alt="Twitter"></a></span>
+        <span class="Pinterest"><a href="https://www.pinterest.com/GirlGoneIntl/"><img
+              src="/images/Pinterest Icon_Deep Ruby.png" alt="Pinterest"></a></span>
+        <span class="Spotify"><a href="https://open.spotify.com/playlist/1zKWwKbxJBqCHbj7zJHskX"><img
+              src="/images/Spotify Icon_Deep Ruby.png" alt="Spotify"></a></span>
+      </div>
+      <p>©2020 Girl Gone International</p>
+      <div class="footer-links">
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms and Conditions</a></li>
+      </div>
     </div>
-    <a href="#">Book Club</a>
-    <a href="#">Blog</a>
-    <a href="#">Team</a>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms and Conditions</a>
   </footer>
 
 

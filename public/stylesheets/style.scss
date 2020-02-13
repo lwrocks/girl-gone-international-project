@@ -11,26 +11,145 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/GGIMorocco.JPG);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.hero-image img {
+  width: 100vw;
+  z-index: -1;
+}
+
+.hero-text h1 {
+  padding-top: 125px;
+  padding-bottom: 20px;
+  font-size: 44px;
+  color: #fff;
+}
+
+.hero-text a {
+  color: #fff;
+  background-color: #cd5a95;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.main-navigation {
+  text-align: right;
+  padding-bottom: 5px;
+}
+
+.main-navigation a {
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.main-navigation {
+  list-style-type: none;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-right: 30px;
+}
+.nav-img {
+  height: 100px;
+  width: 175px;
+}
+
+.main-navigation li {
+  display: inline-block;
+  font-family: "Julius Sans One", sans-serif;
+  margin-left: 30px;
+}
+
+.user-authentication {
+  background-color: #e39ca0;
+  padding-bottom: 10px;
+}
+
+.user-authentication li {
+  list-style-type: none;
+  text-align: right;
+  margin-right: 10px;
+  padding-bottom: 10px;
 }
 
 a {
-  color: #00b7ff;
+  color: #697c9d;
   text-decoration: none;
 }
 
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 36px;
+  text-align: center;
   color: #87c6cb;
   text-transform: uppercase;
 }
 
+.homepage-content {
+  padding: 10px;
+}
+
 .footer {
   height: 20vh;
+  width: 100%;
   background-color: #e39ca0;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.footer-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+}
+
+#map {
+  align-items: center;
+}
+
+.newsletter-signup {
+  background-color: #edd0b8;
+  justify-content: center;
 }
