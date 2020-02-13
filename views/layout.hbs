@@ -17,18 +17,18 @@
 
 <body>
   <header>
-    <div class="navigation">
-      <nav class="user-authentication">
-
+    <div class="user-authentication">
+      <nav>
         {{#if user}}
         <a href="/auth/logout">Logout</a>
         {{else}}
-
         <a href="/auth/login">Login</a>
         <a href="/auth/signup">Sign Up</a>
         {{/if}}
       </nav>
-      <nav class="main-navigation">
+    </div>
+    <div class="main-navigation">
+      <nav>
         <a href="#">About</a>
         <a href="/map">Find Your GGI</a>
         <a href="#">Experiences</a>
@@ -41,26 +41,26 @@
   {{{body}}}
 
   <footer class="footer">
-    <footer class="footer">
-      <div class="social-icons">
-        <span class="Facebook"><a href="https://www.facebook.com/GirlGoneInternational/"><img
-              src="/images/Facebook_White.png" alt="Facebook"></a></span>
-        <span class="Instagram"><a href="https://www.instagram.com/girlgoneinternational/"><img
-              src="/images/Instagram_White.png" alt="Instagram"></a></span>
-        <span class="Twitter"><a href="https://twitter.com/GirlGoneIntl"><img src="/images/Twitter_White.png"
-              alt="Twitter"></a></span>
-        <span class="Pinterest"><a href="https://www.pinterest.com/GirlGoneIntl/"><img src="/images/Pinterest_White.png"
-              alt="Pinterest"></a></span>
-      </div>
-      <a href="#">Book Club</a>
-      <a href="#">Blog</a>
-      <a href="#">Team</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms and Conditions</a>
-    </footer>
+    <div class="social-icons">
+      <span class="Facebook"><a href="https://www.facebook.com/GirlGoneInternational/"><img
+            src="/images/Facebook_White.png" alt="Facebook"></a></span>
+      <span class="Instagram"><a href="https://www.instagram.com/girlgoneinternational/"><img
+            src="/images/Instagram_White.png" alt="Instagram"></a></span>
+      <span class="Twitter"><a href="https://twitter.com/GirlGoneIntl"><img src="/images/Twitter_White.png"
+            alt="Twitter"></a></span>
+      <span class="Pinterest"><a href="https://www.pinterest.com/GirlGoneIntl/"><img src="/images/Pinterest_White.png"
+            alt="Pinterest"></a></span>
+      <span class="Spotify"><a href="https://open.spotify.com/playlist/1zKWwKbxJBqCHbj7zJHskX"></a></span>
+    </div>
+    <a href="#">Book Club</a>
+    <a href="#">Blog</a>
+    <a href="#">Team</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms and Conditions</a>
+  </footer>
 
 
-    <script src="/javascripts/script.js"></script>
+  <script src="/javascripts/script.js"></script>
 </body>
 
 </html>

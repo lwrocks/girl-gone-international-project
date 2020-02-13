@@ -4,10 +4,13 @@
 /* Import PT Sans */
 @import url(https://fonts.googleapis.com/css?family=PT+Sans&display=swap);
 
+/* Setup Raleway Extra Bold */
+@import url(https://fonts.googleapis.com/css?family=Raleway:900&display=swap);
+
 body {
-  padding: 50px;
   font-family: "PT Sans", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  height: 100%;
 }
 
 a {
@@ -16,21 +19,18 @@ a {
 }
 
 h1 {
-  font-family: "Julius Sans One", sans-serif;
-  font-size: 44px;
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
   color: #87c6cb;
+  text-transform: uppercase;
 }
 
-// .footer {
-//   position: fixed;
-//   width: 100%;
-//   height: 30vh;
-//   left: 0;
-//   bottom: 0;
-//   background-color: #87c6cb;
-// }
-
-.footer a {
-  text-align: center;
-  color: #697c9d;
+.footer {
+  height: 20vh;
+  background-color: #e39ca0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
 }
