@@ -250,7 +250,7 @@ const communities = [
     cityImage: "https://i.imgur.com/FWi2lO6.jpg",
     continent: "Africa",
     url: "https://www.facebook.com/groups/GGIJohannesurg/",
-    coordinates: [26.2041, 28.0473]
+    coordinates: [-26.1713, 27.9699]
   },
 
   {
