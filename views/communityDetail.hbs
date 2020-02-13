@@ -6,5 +6,7 @@
   <p>{{communityName}} on Facebook</p>
 </a>
 <a href="/community">View All Communities</a>
+{{#if user}}
 <a href="/community/{{_id}}/delete">Delete This Community</a>
 <a href="/community/{{_id}}/update">Update This Community</a>
+{{/if}}
