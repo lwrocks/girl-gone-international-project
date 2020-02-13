@@ -18,12 +18,14 @@
 <body>
   <header>
     <div class="user-authentication">
-      {{#if user}}
-      <li> <a href="/auth/logout">Logout</a>
-        {{else}}
-      <li><a href="/auth/login">Login</a></li>
-      <li><a href="/auth/signup">Sign Up</a></li>
-      {{/if}}
+      <div class="account-links">
+        {{#if user}}
+        <li> <a href="/auth/logout">Logout</a>
+          {{else}}
+        <li><a href="/auth/login">Login</a></li>
+        <li><a href="/auth/signup">Sign Up</a></li>
+        {{/if}}
+      </div>
     </div>
     <nav class="main-navigation">
       <a href="/"><img class="nav-img" src="/images/GGI Logo 2020.png" alt="Girl Gone International Logo"></a>
