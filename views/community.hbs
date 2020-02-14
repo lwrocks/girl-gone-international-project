@@ -1,11 +1,23 @@
-<h1>Our Communities</h1>
-{{#if user}}
-<a href="/admin/add">Add A New Community</a>
-{{/if}}
-<div class="community-list">
-  {{#each communityList}}
-  <a href="/community/{{_id}}">
-    <p>{{communityName}}</p>
-  </a>
-  {{/each}}
+<div class="community-container">
+  <h1>Our Communities</h1>
+  {{#if user}}
+  {{/if}}
+  <div class="community-list">
+    {{#each communityList}}
+    <div class="community-card">
+      <a href="/community/{{_id}}">
+        <h2>{{communityName}}</h2>
+      </a>
+      <img src="{{cityImage}}" alt="{{location}} GGI">
+
+      <p>{{location}}</p>
+      <a href="{{url}}">
+        <p>{{communityName}} on Facebook</p>
+      </a>
+    </div>
+    {{/each}}
+  </div>
+  <div class="add-community">
+    <a href="/admin/add">Add A New Community</a>
+  </div>
 </div>

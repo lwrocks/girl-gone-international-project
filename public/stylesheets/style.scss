@@ -175,9 +175,17 @@ h2 {
 
 .footer-links {
   list-style-type: none;
-  display: flex;
   flex-direction: row;
-  align-content: space-between;
+  padding-top: 10px;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links li {
+  padding: 0 15px;
+  font-family: "Julius Sans One", sans-serif;
 }
 
 .newsletter-signup {
@@ -217,5 +225,123 @@ h2 {
       padding-top: 25px;
       padding-bottom: 15px;
     }
+  }
+}
+
+.community-container {
+  padding-right: 65px;
+  padding-left: 65px;
+}
+
+.community-list {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  img {
+    height: 250px;
+    width: 250px;
+  }
+  h2 {
+    text-align: left;
+  }
+  .community-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.add-community {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  text-align: center;
+  a {
+    background-color: #cd5a95;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px;
+  }
+  a:hover {
+    background-color: #697c9d;
+  }
+}
+
+.community-detail-container {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 65px;
+  padding-right: 65px;
+
+  .community-details {
+    display: flex;
+    justify-content: space-around;
+  }
+  .community-image-container {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+  .community-container-text {
+    width: 50%;
+    h2 {
+      text-align: left;
+    }
+  }
+}
+
+.login-container {
+  padding-right: 65px;
+  padding-left: 65px;
+  padding-bottom: 30px;
+  text-align: center;
+  .login-fields-container {
+    padding-top: 20px;
+    text-align: center;
+    input {
+      padding: 7px;
+      width: 200px;
+      border-radius: 5px;
+    }
+    .login-btn {
+      background-color: #cd5a95;
+      border-radius: 5px;
+      color: #fff;
+      padding: 15px;
+      font-family: "PT Sans", sans-serif;
+      font-size: 20px;
+    }
+  }
+}
+
+.signup {
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-bottom: 30px;
+  .signup-container {
+    padding-top: 25px;
+    text-align: center;
+    input {
+      padding: 5px;
+      width: 150px;
+      border-radius: 5px;
+    }
+    .create-btn {
+      background-color: #cd5a95;
+      border-radius: 5px;
+      color: #fff;
+      padding: 20px;
+      font-size: 20px;
+      font-family: "PT Sans", sans-serif;
+    }
+    .account-message {
+      padding-top: 30px;
+    }
+  }
+  .signup-content {
+    text-align: center;
   }
 }

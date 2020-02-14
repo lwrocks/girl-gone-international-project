@@ -146,9 +146,16 @@ h2 {
 
 .footer-links {
   list-style-type: none;
-  display: flex;
   flex-direction: row;
-  align-content: space-between; }
+  padding-top: 10px;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
+
+.footer-links li {
+  padding: 0 15px;
+  font-family: "Julius Sans One", sans-serif; }
 
 .newsletter-signup {
   background-color: #edd0b8;
@@ -181,5 +188,98 @@ h2 {
     .map-container .map-container-community .global-group {
       padding-top: 25px;
       padding-bottom: 15px; }
+
+.community-container {
+  padding-right: 65px;
+  padding-left: 65px; }
+
+.community-list {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .community-list img {
+    height: 250px;
+    width: 250px; }
+  .community-list h2 {
+    text-align: left; }
+  .community-list .community-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap; }
+
+.add-community {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  text-align: center; }
+  .add-community a {
+    background-color: #cd5a95;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px; }
+  .add-community a:hover {
+    background-color: #697c9d; }
+
+.community-detail-container {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 65px;
+  padding-right: 65px; }
+  .community-detail-container .community-details {
+    display: flex;
+    justify-content: space-around; }
+  .community-detail-container .community-image-container {
+    width: 40%; }
+    .community-detail-container .community-image-container img {
+      width: 100%; }
+  .community-detail-container .community-container-text {
+    width: 50%; }
+    .community-detail-container .community-container-text h2 {
+      text-align: left; }
+
+.login-container {
+  padding-right: 65px;
+  padding-left: 65px;
+  padding-bottom: 30px;
+  text-align: center; }
+  .login-container .login-fields-container {
+    padding-top: 20px;
+    text-align: center; }
+    .login-container .login-fields-container input {
+      padding: 7px;
+      width: 200px;
+      border-radius: 5px; }
+    .login-container .login-fields-container .login-btn {
+      background-color: #cd5a95;
+      border-radius: 5px;
+      color: #fff;
+      padding: 15px;
+      font-family: "PT Sans", sans-serif;
+      font-size: 20px; }
+
+.signup {
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-bottom: 30px; }
+  .signup .signup-container {
+    padding-top: 25px;
+    text-align: center; }
+    .signup .signup-container input {
+      padding: 5px;
+      width: 150px;
+      border-radius: 5px; }
+    .signup .signup-container .create-btn {
+      background-color: #cd5a95;
+      border-radius: 5px;
+      color: #fff;
+      padding: 20px;
+      font-size: 20px;
+      font-family: "PT Sans", sans-serif; }
+    .signup .signup-container .account-message {
+      padding-top: 30px; }
+  .signup .signup-content {
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
