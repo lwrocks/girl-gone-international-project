@@ -160,7 +160,22 @@ h2 {
 .newsletter-signup {
   background-color: #edd0b8;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  padding: 15px; }
+  .newsletter-signup input {
+    width: 150px;
+    padding: 5px;
+    border: 2px solid #e39ca0;
+    border-radius: 3px; }
+  .newsletter-signup button {
+    background-color: #cd5a95;
+    color: #fff;
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 5px; }
+  .newsletter-signup p {
+    font-size: 15px; }
 
 #map {
   width: 90vw;
@@ -250,7 +265,8 @@ h2 {
     .login-container .login-fields-container input {
       padding: 7px;
       width: 200px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      border: 2px solid #e39ca0; }
     .login-container .login-fields-container .login-btn {
       background-color: #cd5a95;
       border-radius: 5px;
@@ -269,7 +285,8 @@ h2 {
     .signup .signup-container input {
       padding: 5px;
       width: 150px;
-      border-radius: 5px; }
+      border-radius: 5px;
+      border: 2px solid #e39ca0; }
     .signup .signup-container .create-btn {
       background-color: #cd5a95;
       border-radius: 5px;
@@ -281,5 +298,37 @@ h2 {
       padding-top: 30px; }
   .signup .signup-content {
     text-align: center; }
+
+.admin {
+  padding-right: 65px;
+  padding-left: 65px; }
+  .admin .admin-actions {
+    text-align: center;
+    padding-bottom: 40px; }
+    .admin .admin-actions a {
+      padding: 20px;
+      background-color: #cd5a95;
+      color: #fff;
+      border-radius: 5px; }
+    .admin .admin-actions a:hover {
+      background-color: #697c9d; }
+
+.add-new-community {
+  padding-left: 65px;
+  padding-right: 65px; }
+  .add-new-community .add-community-form {
+    text-align: center; }
+    .add-new-community .add-community-form input {
+      padding: 7px;
+      width: 150px;
+      border-radius: 5px;
+      border: 2px solid #e39ca0; }
+    .add-new-community .add-community-form button {
+      background-color: #cd5a95;
+      border-radius: 5px;
+      color: #fff;
+      padding: 20px;
+      font-family: "PT Sans", sans-serif;
+      font-size: 17px; }
 
 /*# sourceMappingURL=style.css.map */

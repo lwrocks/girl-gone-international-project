@@ -1,14 +1,20 @@
-<h1>Add A New Community</h1>
-<form action="/community" method="POST">
-  <label for="communityName">Community Name</label>
-  <input type="text" name="communityName" id="communityName">
-  <label for="location">Location Name</label>
-  <input type="text" name="location" id="location">
-  <label for="communitySize">Community Size</label>
-  <input type="text" name="communitySize" id="communitySize">
-  <label for="communityManagers">Community Manager Name</label>
-  <input type="text" name="communityManagers" id="communityManagers">
-  <label for="url">Community Link</label>
-  <input type="url" name="url" id="url">
-  <button type="submit">Add Community</button>
-</form>
+<div class="add-new-community">
+  <h1>Add A New Community</h1>
+  <div class="add-community-form">
+    <form action="/community" method="POST">
+      <label for="communityName">Community Name</label>
+      <input type="text" name="communityName" id="communityName">
+      <label for="location">Location</label>
+      <input type="text" name="location" id="location">
+      <label for="communitySize">Community Size</label>
+      <input type="text" name="communitySize" id="communitySize">
+      <label for="communityManagers">Community Manager Name</label>
+      <input type="text" name="communityManagers" id="communityManagers">
+      <label for="cityImage">Image URL</label>
+      <input type="url" name="cityImage" id="cityImage">
+      <label for="url">Community Link</label>
+      <input type="url" name="url" id="url">
+      <button type="submit">Add Community</button>
+  </div>
+  </form>
+</div>
