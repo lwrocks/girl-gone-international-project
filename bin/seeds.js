@@ -155,7 +155,7 @@ const communities = [
   },
 
   {
-    communityName: "Canggu & Seminyak | Girl Gone International",
+    communityName: "Bali | Girl Gone International",
     location: "Bali, Indonesia ",
     communityManagers: ["Nona Baradja", "Stephanie King"],
     communitySize: 391,
