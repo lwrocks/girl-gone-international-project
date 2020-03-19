@@ -362,6 +362,8 @@ h2 {
       border-radius: 5px; }
     .admin .admin-actions a:hover {
       background-color: #697c9d; }
+    .admin .admin-actions .admin-resources {
+      text-align: center; }
 
 .add-new-community {
   padding-left: 65px;
