@@ -81,6 +81,9 @@ nav {
   font-size: 20px;
   margin-left: 30px; }
 
+.nav-ul .icon {
+  display: none; }
+
 .user-authentication {
   width: 100%;
   display: flex;
@@ -394,5 +397,24 @@ h2 {
 
 .mapboxgl-popup-content a {
   font-family: "Open Sans", sans-serif; }
+
+@media screen and (max-width: 640px) {
+  .nav-ul a:not(:first-child) {
+    display: none; }
+  .nav-ul a.icon {
+    float: right;
+    display: block; } }
+
+@media screen and (max-width: 640px) {
+  .nav-ul.responsive {
+    position: relative; }
+  .nav-ul.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .nav-ul.responsive a {
+    float: none;
+    display: block;
+    text-align: left; } }
 
 /*# sourceMappingURL=style.css.map */

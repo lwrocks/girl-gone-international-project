@@ -5,4 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
 }, false);
 
 // Hamburger Menu
-
+function myFunction() {
+  let x = document.getElementById("myNavUl");
+  if (x.className === "nav-ul") {
+    x.className += " responsive"; 
+  } else {
+    x.className = "nav-ul";
+  }
+}
