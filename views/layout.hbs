@@ -12,7 +12,8 @@
 
   <script src='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css' rel='stylesheet' />
-
+  {{!-- Hamburger Menu --}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -29,12 +30,16 @@
     </div>
     <nav class="main-navigation">
       <a href="/"><img class="nav-img" src="/images/GGI Logo 2020.png" alt="Girl Gone International Logo"></a>
-      <ul class="nav-ul">
+      <ul class="nav-ul" id="myNavUl">
+        <li><a href="/" class="active">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="/map">Find Your GGI</a></li>
         <li><a href="#">Experiences</a></li>
         <li><a href="#">Book Club</a></li>
         <li><a href="#">Contact</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars"></i>
+          </a></li>
       </ul>
     </nav>
     {{!-- <div class="main-navigation"> --}}
